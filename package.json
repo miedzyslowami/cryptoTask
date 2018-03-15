@@ -1,0 +1,47 @@
+{
+  "name": "cryptotask",
+  "version": "1.0.0",
+  "description": "zadanie rekrutacyjne",
+  "main": "app.js",
+  "scripts": {
+    "build": "./node_modules/.bin/webpack --config=webpack.prod.js",
+    "watch": "./node_modules/.bin/webpack --watch",
+    "dev": "./node_modules/.bin/webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miedzyslowami/cryptoTask.git"
+  },
+  "author": "Malgorzata Grajewska",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miedzyslowami/cryptoTask/issues"
+  },
+  "homepage": "https://github.com/miedzyslowami/cryptoTask#readme",
+  "dependencies": {
+    "node-sass": "^4.7.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "sass-loader": "^6.0.7"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.18",
+    "css-loader": "^0.28.10",
+    "file-loader": "^1.1.11",
+    "style-loader": "^0.20.3",
+    "postcss-loader": "^2.1.1",
+    "raw-loader": "^0.5.1",
+    "html-webpack-plugin": "^2.30.1",
+    "html-loader": "^0.5.5",
+    "material-ui": "^0.20.0",
+    "uglifyjs-webpack-plugin": "^1.2.0",
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.11.1"
+  }
+}
