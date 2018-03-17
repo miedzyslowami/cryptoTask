@@ -1,0 +1,258 @@
+.listingsItem {
+  background: white;
+  box-shadow: 1px 1px 1px 0 #e0d9d9;
+  display: flex;
+  width: 100%;
+  margin: auto auto 2.3rem;
+  max-width: 310px;
+  height: 281px;
+  @media all and (min-width:769px) {
+    height: 135px;
+    max-width: 1140px;
+  }
+
+  .listingLabel {
+    background: #ffbe32;
+    width: 23px;
+
+    .labelWrapper {
+      transform: rotate(-90deg) translate(-145px);
+      @media all and (min-width:769px) {
+        transform: rotate(-90deg) translate(-72px);
+      }
+
+      p {
+        color: white;
+        text-transform: uppercase;
+        font-size: 0.6rem;
+      }
+    }
+  }
+
+  .infoBox {
+    width: 100%;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-areas: "details details details eye" "invest invest invest invest" "value d1 m1 m1";
+    grid-template-columns: auto 30% 15% 15%;
+
+    & > div:not(.cryptoDetails) {
+      text-align: center;
+      margin: 5px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+
+    & > div:nth-of-type(1) {
+      grid-area: details;
+
+      & > div:nth-of-type(1) {
+        margin-top: 10px;
+      }
+    }
+
+    & > div:nth-of-type(2) {
+      grid-area: value;
+      border-right: 1px solid #e0d9d9;
+    }
+
+    & > div:nth-of-type(3) {
+      grid-area: d1;
+      border-right: 1px solid #e0d9d9;
+    }
+
+    & > div:nth-of-type(4) {
+      grid-area: m1;
+    }
+
+    & > div:nth-of-type(9) {
+      grid-area: invest;
+      border-bottom: 1px solid #e0d9d9;
+      padding-bottom: 5px;
+    }
+
+    & > div:nth-of-type(10) {
+      grid-area: eye;
+      justify-self: end;
+      margin-right: 11px;
+    }
+
+    & > div:nth-of-type(5) {
+      display: none;
+    }
+
+    & > div:nth-of-type(6) {
+      display: none;
+    }
+
+    & > div:nth-of-type(7) {
+      display: none;
+    }
+
+    & > div:nth-of-type(8) {
+      display: none;
+    }
+
+    & > div:nth-of-type(11) {
+      display: none;
+    }
+    @media all and (min-width:769px) {
+      padding: 20px 0 20px 10px;
+      grid-template-areas: "details value d1 m1 m3 m12 m30 ytd invest invest" "details value d1 m1 m3 m12 m30 ytd eye scale";
+      grid-template-columns: 260px 130px auto auto auto auto auto auto 65px 65px;
+
+      & > div:nth-of-type(1) {
+        grid-area: details;
+        padding-right: 20px;
+      }
+
+      & > div:nth-of-type(1) {
+        border-right: 1px solid #e0d9d9;
+      }
+
+      & > div:nth-of-type(4) {
+        border-right: 1px solid #e0d9d9;
+      }
+
+      & > div:nth-of-type(5) {
+        grid-area: m3;
+        display: block;
+        border-right: 1px solid #e0d9d9;
+      }
+
+      & > div:nth-of-type(6) {
+        grid-area: m12;
+        display: block;
+        border-right: 1px solid #e0d9d9;
+      }
+
+      & > div:nth-of-type(7) {
+        grid-area: m30;
+        display: block;
+        border-right: 1px solid #e0d9d9;
+      }
+
+      & > div:nth-of-type(8) {
+        grid-area: ytd;
+        display: block;
+        border-right: 1px solid #e0d9d9;
+      }
+
+      & > div:nth-of-type(11) {
+        grid-area: scale;
+        display: block;
+      }
+
+      & > div:nth-of-type(9) {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+
+      & > div:nth-of-type(2),
+      & > div:nth-of-type(3),
+      & > div:nth-of-type(4),
+      & > div:nth-of-type(5),
+      & > div:nth-of-type(6),
+      & > div:nth-of-type(7),
+      & > div:nth-of-type(8) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 20px 2px;
+      }
+    }
+
+    .eyeIcon,
+    .scaleIcon {
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 20px;
+      width: 20px;
+    }
+
+    .eyeIcon {
+      background-image: url("../img/oko.png");
+
+      &:hover {
+        background-image: url("../img/okohover.png");
+      }
+    }
+
+    .scaleIcon {
+      background-image: url("../img/waga.png");
+
+      &:hover {
+        background-image: url("../img/wagahover.png");
+      }
+    }
+  }
+
+  .changeValue {
+    font-size: 1rem;
+
+  }
+
+  .permanentLabel {
+    font-size: 0.7rem;
+  }
+
+  .curValue {
+    color: #c83d57;
+    font-size: 1rem;
+@media all and (min-width:769px) {
+  font-size: 1.1rem;
+}
+    & > span {
+      font-size: 0.8rem;
+    }
+  }
+
+  .currency {
+    font-size: 0.8rem;
+  }
+
+  .dot,
+  .dot + div,
+  .umbrella,
+  .umbrella + div {
+    display: inline-block;
+    height: 18px;
+    vertical-align: top;
+  }
+
+  .umbrella {
+    background-image: url("../img/parasol.png");
+    background-repeat: no-repeat;
+    background-position-y: 3px;
+    background-position-x: 3px;
+    width: 18px;
+
+    & + div {
+      font-size: 0.8rem;
+      margin-left: 5px;
+    }
+  }
+
+  .dot {
+    display: none;
+    border-radius: 50%;
+    background-color: #ffbe32;
+    width: 10px;
+    height: 10px;
+    margin: 4px;
+    @media all and (min-width:769px) {
+      display: inline-block;
+    }
+
+    & + div {
+      display: none;
+      font-size: 0.8rem;
+      margin-left: 5px;
+      @media all and (min-width:769px) {
+        display: inline-block;
+      }
+    }
+  }
+}

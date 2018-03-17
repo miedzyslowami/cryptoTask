@@ -2,7 +2,7 @@ const path = require("path");
 module.exports = {
   entry: ['./src/js/index.jsx'],
   output: {
-    path: path.resolve("dev/js"),
+    path: path.resolve("dev"),
     filename: "app.js"
   },
   devServer: {
@@ -30,8 +30,8 @@ module.exports = {
         loader: 'raw-loader'
       },
       {
-      test: /\.jpg$/,
-      loader: 'file-loader'
+      test: /\.(gif|png|jpe?g|svg)$/,
+       loader: 'file-loader?name=./img/[name].[ext]'
 }
     ]
   }

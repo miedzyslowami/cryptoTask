@@ -1,0 +1,20 @@
+
+.investButton{
+  width: 95%;
+    height: 35px;
+    margin: auto;
+    display: block;
+
+
+
+   border-radius: 5px;
+   border:none;
+  
+   color:white;
+   text-transform: uppercase;
+   font-weight: 700;
+   font-size: 0.8rem;
+   background: linear-gradient(45deg, #d52d52 0%, #f66258 81%, #f75e57 100%); /* w3c */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f75e57', endColorstr='#d52d52',GradientType=1 ); /* ie6-9 */
+
+}
