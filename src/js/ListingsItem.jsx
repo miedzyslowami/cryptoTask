@@ -76,7 +76,7 @@ class ListingsItem extends React.Component {
           <div className={scss.changeValue}>{this.formatPercent(this.props.ytd)}</div>
           <div className={scss.permanentLabel}>YTD</div>
         </div>
-        <div><InvestButton/>
+        <div><InvestButton buttonText="Inwestuj"/>
         </div>
 
           <div className={scss.eyeIcon}></div>

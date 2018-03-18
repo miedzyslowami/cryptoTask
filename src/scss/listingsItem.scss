@@ -79,25 +79,13 @@
       margin-right: 11px;
     }
 
-    & > div:nth-of-type(5) {
+  
+
+    & > div:nth-of-type(5),& > div:nth-of-type(6),& > div:nth-of-type(7),& > div:nth-of-type(8),& > div:nth-of-type(11)  {
       display: none;
     }
 
-    & > div:nth-of-type(6) {
-      display: none;
-    }
 
-    & > div:nth-of-type(7) {
-      display: none;
-    }
-
-    & > div:nth-of-type(8) {
-      display: none;
-    }
-
-    & > div:nth-of-type(11) {
-      display: none;
-    }
     @media all and (min-width:769px) {
       padding: 20px 0 20px 10px;
       grid-template-areas: "details value d1 m1 m3 m12 m30 ytd invest invest" "details value d1 m1 m3 m12 m30 ytd eye scale";
@@ -191,7 +179,6 @@
 
   .changeValue {
     font-size: 1rem;
-
   }
 
   .permanentLabel {
@@ -201,9 +188,10 @@
   .curValue {
     color: #c83d57;
     font-size: 1rem;
-@media all and (min-width:769px) {
-  font-size: 1.1rem;
-}
+    @media all and (min-width:769px) {
+      font-size: 1.1rem;
+    }
+
     & > span {
       font-size: 0.8rem;
     }

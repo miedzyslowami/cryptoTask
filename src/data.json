@@ -1,0 +1,24 @@
+{"listings":{
+  "1":{
+    "cryptoCurrencyName": "Ethereum Classic combined with Zcash",
+    "curValue": "2200",
+    "currency": "PLN",
+    "change1day": "0,91",
+    "change1month": "-0,21",
+    "change3month": "-2,29",
+    "change12month": "0,42",
+    "change30month": "0,85",
+    "ytd": "1,31"
+  },"2":{
+    "cryptoCurrencyName": "Ethereum Classic combined with Zcash",
+    "curValue": "2200",
+    "currency": "PLN",
+    "change1day": "0,91",
+    "change1month": "-0,21",
+    "change3month": "-2,29",
+    "change12month": "0,42",
+    "change30month": "0,85",
+    "ytd": "1,31"
+  }
+}
+}

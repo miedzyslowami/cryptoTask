@@ -16,7 +16,7 @@ module.exports = {
 
   plugins: [
     new CleanWebpackPlugin(['public']),
-    new HtmlWebpackPlugin({title: 'Zadanie rekrutacyjne - Produkcja', template: './src/index.html'}),
+    new HtmlWebpackPlugin({title: 'Crypto listings', template: './src/index.html'}),
     new UglifyJSPlugin({sourceMap: true}),
     new webpack.DefinePlugin({'process.env.NODE_ENV': JSON.stringify('production')})
   ],

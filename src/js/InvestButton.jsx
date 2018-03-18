@@ -6,8 +6,7 @@ class InvestButton extends React.Component {
     super(props);
   }
     render(){
-
-      return(<button className={scss.investButton}>Inwestuj</button>)
+      return(<button className={scss.investButton}>{this.props.buttonText}</button>)
     }
   }
 export default InvestButton;
