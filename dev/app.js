@@ -1425,7 +1425,7 @@ var _Listings = __webpack_require__(30);
 
 var _Listings2 = _interopRequireDefault(_Listings);
 
-var _index = __webpack_require__(46);
+var _index = __webpack_require__(47);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -18797,7 +18797,7 @@ var _listings = __webpack_require__(44);
 
 var _listings2 = _interopRequireDefault(_listings);
 
-var _data = __webpack_require__(49);
+var _data = __webpack_require__(46);
 
 var _data2 = _interopRequireDefault(_data);
 
@@ -19490,10 +19490,16 @@ exports.locals = {
 
 /***/ }),
 /* 46 */
+/***/ (function(module, exports) {
+
+module.exports = {"listings":{"1":{"cryptoCurrencyName":"Ethereum Classic combined with Zcash","curValue":"2200","currency":"PLN","change1day":"0,91","change1month":"-0,21","change3month":"-2,29","change12month":"0,42","change30month":"0,85","ytd":"1,31"},"2":{"cryptoCurrencyName":"Ethereum Classic combined with Zcash","curValue":"2200","currency":"PLN","change1day":"0,91","change1month":"-0,21","change3month":"-2,29","change12month":"0,42","change30month":"0,85","ytd":"1,31"}}}
+
+/***/ }),
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(47);
+var content = __webpack_require__(48);
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -19539,7 +19545,7 @@ if(false) {
 }
 
 /***/ }),
-/* 47 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(5)(false);
@@ -19553,13 +19559,6 @@ exports.push([module.i, "body, * {\n  margin: 0;\n  padding: 0;\n  font-family: 
 exports.locals = {
 	"wrapper": "wrapper---38xbX"
 };
-
-/***/ }),
-/* 48 */,
-/* 49 */
-/***/ (function(module, exports) {
-
-module.exports = {"listings":{"1":{"cryptoCurrencyName":"Ethereum Classic combined with Zcash","curValue":"2200","currency":"PLN","change1day":"0,91","change1month":"-0,21","change3month":"-2,29","change12month":"0,42","change30month":"0,85","ytd":"1,31"},"2":{"cryptoCurrencyName":"Ethereum Classic combined with Zcash","curValue":"2200","currency":"PLN","change1day":"0,91","change1month":"-0,21","change3month":"-2,29","change12month":"0,42","change30month":"0,85","ytd":"1,31"}}}
 
 /***/ })
 /******/ ]);

@@ -11,11 +11,11 @@ module.exports = {
   devtool: 'source-map',
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'public')
+    path: path.resolve(__dirname, 'build')
   },
 
   plugins: [
-    new CleanWebpackPlugin(['public']),
+    new CleanWebpackPlugin(['build']),
     new HtmlWebpackPlugin({title: 'Crypto listings', template: './src/index.html'}),
     new UglifyJSPlugin({sourceMap: true}),
     new webpack.DefinePlugin({'process.env.NODE_ENV': JSON.stringify('production')})
